@@ -1,0 +1,46 @@
+{
+  "name": "fmex-sdk",
+  "version": "0.0.1",
+  "description": "make fmex api easily",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@types/node-fetch": "^2.1.4",
+    "node-fetch": "^2.3.0",
+    "ws": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^10.5.2",
+    "@types/ws": "^5.1.2",
+    "chai": "^4.2.0",
+    "https-proxy-agent": "^2.2.1",
+    "mocha": "^6.1.4",
+    "ts-node": "^4.1.0",
+    "tslint": "^5.6.0",
+    "typescript": "^2.9.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint --project .",
+    "test": "mocha -r ts-node/register tests/**.ts",
+    "watch": "mocha -r ts-node/register tests/**.ts --watch --watch-extensions ts",
+    "test-ts": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ftfan/fmex-sdk.git"
+  },
+  "keywords": [
+    "sdk",
+    "fcoin",
+    "fmex",
+    "javascript"
+  ],
+  "author": "imconfig",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ftfan/fmex-sdk/issues"
+  },
+  "homepage": "https://github.com/ftfan/fmex-sdk#readme"
+}
